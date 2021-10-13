@@ -24,14 +24,14 @@ gcd      = math.gcd(numerator, denominator)
 
 if gcd == 1:
 
-    print(f"This {fraction_type} cannot be simplified.")
+    print(f"This {fraction_type} cannot be reduced any forther.")
 
 else:
 
     numerator = numerator // gcd
     denominator = denominator // gcd
 
-    print(f"This {fraction_type} can be simplified into: {numerator} / {denominator}")
+    print(f"This {fraction_type} can be reduced to: {numerator} / {denominator}")
 
 WholeNum = numerator // denominator
 Remainder = numerator % denominator
@@ -39,4 +39,4 @@ Remainder = numerator % denominator
 if Remainder == 0:
     print(f"{fraction} can be written as the whole number {WholeNum}.")
 else:
-    print(f"{fraction} can be written as the mixed number {WholeNum} {Remainder} / {Denom}.")
+    print(f"{fraction} can be written as the mixed number {WholeNum} and {Remainder} / {denominator}.")
